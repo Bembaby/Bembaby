@@ -27,6 +27,13 @@
 **Web:** TypeScript · Next.js (App Router) · Tailwind CSS
 **Tooling:** Xcode · GitHub Actions (self-hosted CI) · Railway · Docker
 
+## Featured work
+
+| Project | What it is | Stack |
+|---|---|---|
+| **FitTrack+** | Fitness platform: native iOS + watchOS app with HealthKit sync, Live Activities, and widgets; REST API with JWT auth and CSRF hardening; responsive web client | SwiftUI · Spring Boot · Next.js · MySQL |
+| **[Portfolio](https://github.com/Bembaby/Portfolio)** | Personal portfolio site at [BelalEmbaby.com](https://BelalEmbaby.com) | JavaScript |
+
 ## Stats
 
 <p>
@@ -36,4 +43,8 @@
 
 <p>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=github-dark-blue&hide_border=true" alt="Contribution streak" height="165" />
+</p>
+
+<p>
+  <img src="https://github-profile-trophy.vercel.app/?username=Bembaby&theme=darkhub&no-frame=true&column=7&margin-w=8" alt="GitHub trophies" />
 </p>
