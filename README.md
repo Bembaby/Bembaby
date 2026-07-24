@@ -37,14 +37,9 @@
 ## Stats
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Bembaby&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bembaby&layout=compact&theme=github_dark&hide_border=true&count_private=true" alt="Top languages" height="165" />
-</p>
-
-<p>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=github-dark-blue&hide_border=true" alt="Contribution streak" height="165" />
 </p>
 
 <p>
-  <img src="https://github-profile-trophy.vercel.app/?username=Bembaby&theme=darkhub&no-frame=true&column=7&margin-w=8" alt="GitHub trophies" />
+  <img src="https://ghchart.rshah.org/40c463/Bembaby" alt="Contribution graph" width="100%" />
 </p>
