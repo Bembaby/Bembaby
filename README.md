@@ -40,6 +40,7 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=github-dark-blue&hide_border=true" alt="Contribution streak" height="165" />
 </p>
 
-<p>
-  <img src="https://ghchart.rshah.org/40c463/Bembaby" alt="Contribution graph" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake.svg" alt="Snake eating my contribution graph" width="100%" />
+</picture>
