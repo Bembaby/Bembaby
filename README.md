@@ -1,46 +1,29 @@
-# Hey, I'm Belal 👋
+### Hi, I'm Belal.
 
-**Full-stack engineer** shipping across the whole stack — native iOS, backend services, and web.
+Software engineer in Newark, NJ. I build Java/Spring Boot APIs, native SwiftUI apps for iPhone and Apple Watch, and websites for small businesses. Computer science at NJIT, class of 2025.
 
-- 🏋️ Currently building **FitTrack+**, a fitness platform spanning a SwiftUI iOS + watchOS app, a Spring Boot API, and a Next.js web client
-- 🔐 Recently deep in auth hardening: CSRF protection, token lifecycles, Keychain-backed credential storage
-- 🌐 Portfolio: [BelalEmbaby.com](https://BelalEmbaby.com)
+**Shipped**
 
-## What I work with
+- [FitTrack+](https://apps.apple.com/us/app/fittrack/id6756076614), a strength training app for iPhone, iPad and Apple Watch, on the App Store since December 2025. Spring Boot and MySQL behind it, plus a [web client](https://www.fitstrack.com/).
+- [embabysteps.com](https://embabysteps.com/), a publishing site for a licensed pediatric physical therapist.
+- [parkwestdiner.com](https://www.parkwestdiner.com/), the website for a diner in Little Falls, NJ.
 
-<p>
-  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
-  <img src="https://img.shields.io/badge/SwiftUI-0071E3?style=for-the-badge&logo=swift&logoColor=white" alt="SwiftUI" />
-  <img src="https://img.shields.io/badge/Java%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 17" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/MySQL%208-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL 8" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Railway" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-</p>
+**Open source**
 
-**iOS:** SwiftUI · Observation · HealthKit · WatchConnectivity · WidgetKit / Live Activities
-**Backend:** Java 17 · Spring Boot · Spring Security · MySQL 8 · JPA
-**Web:** TypeScript · Next.js (App Router) · Tailwind CSS
-**Tooling:** Xcode · GitHub Actions (self-hosted CI) · Railway · Docker
+I fix bugs in other people's projects, usually with a regression test. See what's been merged in [sentence-transformers](https://github.com/huggingface/sentence-transformers/pulls?q=is%3Apr+is%3Amerged+author%3ABembaby) at Hugging Face, [OpenMed](https://github.com/maziyarpanahi/openmed/pulls?q=is%3Apr+is%3Amerged+author%3ABembaby) and the [Cyberwave Python SDK](https://github.com/cyberwave-os/cyberwave-python/pulls?q=is%3Apr+is%3Amerged+author%3ABembaby).
 
-## Featured work
+**Elsewhere**
 
-| Project | What it is | Stack |
-|---|---|---|
-| **FitTrack+** | Fitness platform: native iOS + watchOS app with HealthKit sync, Live Activities, and widgets; REST API with JWT auth and CSRF hardening; responsive web client | SwiftUI · Spring Boot · Next.js · MySQL |
-| **[Portfolio](https://github.com/Bembaby/Portfolio)** | Personal portfolio site at [BelalEmbaby.com](https://BelalEmbaby.com) | JavaScript |
+[belalembaby.com](https://www.belalembaby.com) · [LinkedIn](https://www.linkedin.com/in/belalembaby/) · belal919@live.com
 
-## Stats
+<br />
 
-<p>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=github-dark-blue&hide_border=true" alt="Contribution streak" height="165" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=transparent&hide_border=true&ring=3fb950&fire=3fb950&currStreakLabel=3fb950&background=00000000&stroke=30363d&dates=8b949e&sideLabels=c9d1d9&currStreakNum=f0f6fc&sideNums=f0f6fc" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bembaby&theme=default&hide_border=true&ring=1a7f37&fire=1a7f37&currStreakLabel=1a7f37&background=00000000" alt="My current GitHub streak" height="150" />
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake.svg" alt="Snake eating my contribution graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake.svg" alt="A snake eating my contribution graph" width="100%" />
 </picture>
