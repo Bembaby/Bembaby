@@ -1,0 +1,10 @@
+The fonts in this folder are Latin subsets served unmodified from Google Fonts
+and are licensed under the SIL Open Font License, Version 1.1:
+https://openfontlicense.org/open-font-license-official-text/
+
+- Sofia Sans Extra Condensed: Copyright 2019 The Sofia Sans Project Authors
+  https://github.com/lettersoup/Sofia-Sans
+- IBM Plex Mono: Copyright 2017 IBM Corp.
+  https://github.com/IBM/plex
+
+scripts/card.mjs embeds them in the banner it draws.
