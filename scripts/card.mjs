@@ -12,13 +12,6 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.argv[2] ?? join(ROOT, "dist");
 const USER = process.env.CARD_USER ?? "Bembaby";
 const TOKEN = process.env.GITHUB_TOKEN;
-// Projects I contribute to; merged pull requests there count as upstream.
-const UPSTREAM = [
-  "huggingface/sentence-transformers",
-  "maziyarpanahi/openmed",
-  "cyberwave-os/cyberwave-python",
-  "koaning/scikit-lego",
-];
 
 if (!TOKEN) throw new Error("GITHUB_TOKEN is not set");
 const headers = { authorization: `bearer ${TOKEN}`, "user-agent": `${USER}-profile-card` };
@@ -65,14 +58,6 @@ for (;;) {
   const earlier = await calendar(from.toISOString(), new Date(to.getTime() - 1000).toISOString());
   days = [...earlier.days, ...days];
 }
-
-const search = await fetch(
-  `https://api.github.com/search/issues?per_page=1&q=${encodeURIComponent(
-    `is:pr is:merged author:${USER} ${UPSTREAM.map((r) => `repo:${r}`).join(" ")}`,
-  )}`,
-  { headers },
-);
-const merged = (await search.json()).total_count ?? 0;
 
 const fmt = (n) => n.toLocaleString("en-US");
 const month = (iso) => new Date(`${iso}T12:00:00Z`).toLocaleString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }).toUpperCase();
@@ -134,13 +119,14 @@ function draw(t) {
     .join("");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
-<title id="t">Belal Embaby, software engineer in Newark, NJ. ${streak}-day commit streak, ${fmt(year.total)} contributions in the last year, ${merged} pull requests merged upstream.</title>
+<title id="t">Belal Embaby, software engineer in Newark, NJ. ${streak}-day commit streak and ${fmt(year.total)} contributions in the last year.</title>
 <defs>
 <style>
 @font-face { font-family: "Sofia"; font-weight: 1 1000; src: url(data:font/woff2;base64,${SOFIA}) format("woff2"); }
 @font-face { font-family: "Plex"; font-weight: 500; src: url(data:font/woff2;base64,${PLEX}) format("woff2"); }
 .display { font-family: "Sofia", "Arial Narrow", sans-serif; }
 .mono { font-family: "Plex", ui-monospace, Consolas, monospace; font-weight: 500; letter-spacing: 0.14em; }
+.num { letter-spacing: 0.02em; }
 .bar { transform-box: fill-box; transform-origin: 50% 100%; animation: rise 0.9s cubic-bezier(.2, .8, .2, 1) both; }
 .bar.hot { animation-name: rise, shimmer; animation-duration: 0.9s, 3.4s; animation-timing-function: cubic-bezier(.2, .8, .2, 1), ease-in-out; animation-iteration-count: 1, infinite; animation-fill-mode: both, none; }
 .bar.today { animation: rise 0.9s cubic-bezier(.2, .8, .2, 1) both, pulse 2.2s ease-in-out 1.6s infinite; }
@@ -165,12 +151,12 @@ function draw(t) {
 <g class="fade">
 <text class="mono" x="${X0}" y="56" font-size="12" fill="${t.mute}">SOFTWARE ENGINEER · NEWARK, NJ</text>
 <text class="display" x="${X0 - 3}" y="136" font-size="92" font-weight="250" letter-spacing="-1" fill="${t.ink}">BELAL EMBABY</text>
-<text class="mono" x="${X0}" y="172" font-size="12" fill="${t.mute}"><tspan fill="${t.ink}">${fmt(year.total)}</tspan> CONTRIBUTIONS THIS YEAR · <tspan fill="${t.ink}">${merged}</tspan> PRS MERGED UPSTREAM</text>
-<text class="display" x="${X1}" y="136" font-size="118" font-weight="200" text-anchor="end" fill="${t.ink}">${streak}</text>
-<text class="mono" x="${X1}" y="56" font-size="12" text-anchor="end" fill="${t.mute}">DAY STREAK${start ? ` · SINCE ${esc(month(start))}` : ""}</text>
+<text class="mono" x="${X0}" y="172" font-size="12" fill="${t.mute}"><tspan class="num" fill="${t.ink}">${fmt(year.total)}</tspan> CONTRIBUTIONS THIS YEAR</text>
+<text class="display" x="${X1}" y="136" font-size="112" font-weight="200" letter-spacing="1" text-anchor="end" fill="${t.ink}">${streak}</text>
+<text class="mono" x="${X1}" y="172" font-size="12" text-anchor="end" fill="${t.mute}">DAY STREAK${start ? ` · SINCE <tspan class="num" fill="${t.ink}">${esc(month(start))}</tspan>` : ""}</text>
 </g>
 ${bars}
-<text class="mono" x="${X0}" y="276" font-size="10.5" fill="${t.mute}">${esc(month(recent[0].date))}</text>
+<text class="mono num" x="${X0}" y="276" font-size="10.5" fill="${t.mute}">${esc(month(recent[0].date))}</text>
 <text class="mono" x="${X1}" y="276" font-size="10.5" text-anchor="end" fill="${t.mute}">TODAY</text>
 </svg>
 `;
@@ -178,4 +164,4 @@ ${bars}
 
 mkdirSync(OUT, { recursive: true });
 for (const [name, t] of Object.entries(THEMES)) writeFileSync(join(OUT, `card-${name}.svg`), draw(t));
-console.log(`streak ${streak} since ${start}, ${year.total} this year, ${merged} merged upstream`);
+console.log(`streak ${streak} since ${start}, ${year.total} this year`);

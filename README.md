@@ -10,8 +10,3 @@ If you stumbled onto my profile, I hope you're a passionate programmer like me. 
 Say hi anytime at belal919@live.com, or wander over to [belalembaby.com](https://www.belalembaby.com).
 
 Belal
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/Bembaby/Bembaby/output/github-snake.svg" alt="A snake eating my contribution graph" width="100%" />
-</picture>
